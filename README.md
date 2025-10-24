@@ -1,6 +1,6 @@
 # AlgoMaestro - Chat-Driven Algorithmic Trading Agent
 
-A sophisticated AI-powered trading agent that converts natural language strategy descriptions into production-ready algorithmic trading systems with automated execution, backtesting, and risk management.
+An AI-powered trading agent that converts natural language strategy descriptions into production-ready algorithmic trading systems with automated execution, backtesting, and risk management.
 
 ## Problem Summary (What Traders Struggle With)
 
