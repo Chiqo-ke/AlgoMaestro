@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217.2 91.2% 59.8%;
+    --sidebar-primary-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 224.3 76.3% 94.1%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+  
+  code, pre {
+    @apply font-code;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:opacity-90 text-primary-foreground px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/80 text-secondary-foreground px-4 py-2 rounded-md border border-border transition-colors duration-200 font-medium;
+  }
+  
+  .btn-success {
+    @apply bg-success-600 hover:bg-success-700 text-white px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+  }
+  
+  .btn-danger {
+    @apply bg-destructive hover:bg-destructive/80 text-destructive-foreground px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+  }
+  
+  .card {
+    @apply bg-card border border-border rounded-lg p-6 shadow-lg text-card-foreground;
+  }
+  
+  .input {
+    @apply bg-background border border-input text-foreground px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent placeholder:text-muted-foreground;
+  }
+  
+  .textarea {
+    @apply bg-background border border-input text-foreground px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none placeholder:text-muted-foreground;
+  }
+  
+  .select {
+    @apply bg-background border border-input text-foreground px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent;
+  }
+  
+  /* Enhanced animations */
+  .animate-in {
+    @apply animate-accordion-down;
+  }
+  
+  .animate-out {
+    @apply animate-accordion-up;
+  }
+  
+  /* Sidebar specific styles */
+  .sidebar-item {
+    @apply bg-sidebar-accent hover:bg-sidebar-accent/80 text-sidebar-accent-foreground px-3 py-2 rounded-md transition-colors duration-200;
+  }
+  
+  /* Chart colors */
+  .chart-1 { @apply text-chart-1; }
+  .chart-2 { @apply text-chart-2; }
+  .chart-3 { @apply text-chart-3; }
+  .chart-4 { @apply text-chart-4; }
+  .chart-5 { @apply text-chart-5; }
+}
