@@ -118,3 +118,10 @@ Trader chats: "Create a mean-reversion strategy: entry when price deviates 2σ f
 **Overfitting during optimization:** limit parameter sweeps, use walk-forward validation and out-of-sample testing.
 
 **Regulatory/compliance issues:** include configurable guardrails and trading limits; log all trades for audits.
+
+
+
+## Developers 
+**Denis Muli** https://www.linkedin.com/in/dennis-muli4444?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+**Arnold Njeru** https://www.linkedin.com/in/arnold-njeru-06bab7248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+**Nyaga Robinson** GitHub : @Chiqo-ke 
